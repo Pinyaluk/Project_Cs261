@@ -10,6 +10,7 @@ services:
       - dbdata:/var/opt/mssql
 
   backend:
+    platform: linux/amd64
     build: ./backend
     ports:
       - "8080:8080"
